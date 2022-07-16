@@ -815,14 +815,26 @@ ul {
 }
 
 .agreement-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
   margin-top: 20px;
 }
 
+.agreement-check {
+  display: none;
+}
+
+.agreement-input:checked + .agreement-border {
+  display: none;
+}
+
+.agreement-input:checked ~ .agreement-check {
+  display: block;
+}
+
 .agreement-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container header-menu">
@@ -444,13 +445,17 @@
             ></textarea>
           </div>
           <div class="agreement-field">
-            <input
-              class="agreement-input"
-              id="user-agreement"
-              type="checkbox"
-              name="user-agreement"
-            />
-            <label class="agreement-label" for="user-agreement"
+            <label class="agreement-label"
+              ><input
+                class="agreement-input visually-hidden"
+                type="checkbox"
+                name="user-agreement"
+              />
+              <svg class="agreement-border" width="16px" height="15px">
+                <use href="./images/sprite.svg#agr-border"></use>
+              </svg>
+              <svg class="agreement-check" width="16px" height="15px">
+                <use href="./images/sprite.svg#agr-check"></use></svg
               >Соглашаюсь с рассылкой и принимаю
               <a class="agreement-link" href="#">Условия договора</a></label
             >
