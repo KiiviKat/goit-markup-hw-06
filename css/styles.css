@@ -597,11 +597,11 @@ ul {
 
 .footer-container {
   display: flex;
-  gap: 70px;
+  align-items: baseline;
 }
 
 .footer-socials {
-  padding-top: 12px;
+  margin-left: 70px;
 }
 
 .cta-title {
@@ -641,7 +641,6 @@ ul {
 }
 
 .sign-up-form {
-  padding-top: 12px;
   margin-left: auto;
 }
 
@@ -714,6 +713,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding: 40px;
+
   min-width: 528px;
   min-height: 581px;
   border-radius: 4px;
@@ -724,12 +725,14 @@ ul {
 }
 
 .modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top: 8px;
-  margin-left: 490px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -749,16 +752,9 @@ ul {
 }
 
 .modal-title {
-  margin-top: 2px;
   margin-bottom: 12px;
   font-size: 20px;
   text-align: center;
-}
-
-.call-back-form {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
 }
 
 .form-field {
